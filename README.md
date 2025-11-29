@@ -51,3 +51,10 @@ You can choose whether to export *only failing controls* to a CSV file.
 
 ## 🗂 Project Structure
 
+<p align="left">
+  <img src="https://github.com/ksowu1/it-audit-control-simulator/actions/workflows/ci.yml/badge.svg" alt="CI Status">
+  <img src="https://img.shields.io/github/license/ksowu1/it-audit-control-simulator" alt="License">
+  <img src="https://img.shields.io/github/last-commit/ksowu1/it-audit-control-simulator" alt="Last Commit">
+  <img src="https://img.shields.io/github/repo-size/ksowu1/it-audit-control-simulator" alt="Repo Size">
+  <img src="https://img.shields.io/badge/Python-3.10-blue" alt="Python Version">
+</p>
