@@ -1,31 +1,28 @@
-IT Audit Control Simulator Documentation
+IT Audit Control Simulator
+==========================
+
+.. raw:: html
+
+   <div style="text-align:center;">
+       <img src="_static/banner.png" alt="IT Audit Control Simulator" style="width:80%; border-radius:12px;">
+   </div>
+
 .. include:: _static/badges.rst
 
-========================================
-
-Welcome to the official documentation for **IT Audit Control Simulator**, created by **Komi Sowu**.
-
-This toolkit helps IT auditors simulate, evaluate, and verify enterprise controls across common domains such as access management, logging, backup, data security, and change management.
-
-.. image:: _static/banner.png
-   :alt: IT Audit Banner
-   :class: landing-banner
-
-----
+Welcome to the official documentation for **IT Audit Control Simulator**, an interactive tool designed to help IT auditors evaluate system controls, generate reports, and simulate real-world compliance scenarios.
 
 Features
 --------
 
-- 🔐 Simulate enterprise IT controls
-- 🧪 Run scenario-based audit tests
-- 📊 Built-in scoring and reporting
-- 🖥 CLI + GUI mode
-- 🏗 Modular, extensible architecture
+- ✔ Automated IT control testing
+- ✔ Config-driven architecture (YAML)
+- ✔ CLI-based simulator
+- ✔ Exportable audit reports
+- ✔ Modular and extensible design
+- ✔ Beginner-friendly setup
 
-----
-
-Quick Start
------------
+Contents
+--------
 
 .. toctree::
    :maxdepth: 2
@@ -33,24 +30,21 @@ Quick Start
 
    installation
    usage
-   architecture
-
-----
-
-Controls Library
-----------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :caption: Core Documentation
 
+   architecture
    controls
 
-----
+.. toctree::
+   :maxdepth: 2
 
-Troubleshooting & Support
--------------------------
+   autodoc2-controls
 
 .. toctree::
    :maxdepth: 1
+   :caption: Help
 
    troubleshooting
