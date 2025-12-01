@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT Audit Control Simulator - Web Edition</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>IT Audit Control Simulator</h1>
+
+<div class="container">
+
+    <h2>Run Default Scenario</h2>
+    <a href="/run_default" class="btn">Run Default</a>
+
+    <hr>
+
+    <h2>Upload Custom Dataset</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".json" required>
+        <button type="submit" class="btn">Upload & Run</button>
+    </form>
+
+</div>
+
+</body>
+</html>

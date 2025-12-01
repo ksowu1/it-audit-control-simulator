@@ -1,0 +1,40 @@
+{
+  "access_control": {
+    "users": {
+      "root":   { "role": "admin",   "status": "active",     "active": true,  "department": "IT",        "privileged": true },
+      "janet":  { "role": "approver","status": "active",     "active": true,  "department": "Finance",   "privileged": false },
+      "leo":    { "role": "requester","status": "active",    "active": true,  "department": "Finance",   "privileged": false },
+      "ghost1": { "role": null,      "status": "active",     "active": true,  "department": "Unknown",   "privileged": false },
+      "terminated_admin": { "role": "admin", "status": "terminated", "active": true, "department": "IT", "privileged": true }
+    }
+  },
+  "change_management": {
+    "changes": [
+      {
+        "id": 400,
+        "approved": false,
+        "approval_date": "2024-08-01T00:00:00",
+        "deployment_date": "2024-08-01T00:00:00"
+      },
+      {
+        "id": 401,
+        "approved": true,
+        "approval_date": "2024-08-05T00:00:00",
+        "deployment_date": "2024-08-04T00:00:00"
+      }
+    ]
+  },
+  "backup_recovery": {
+    "backups": [
+      { "days_ago": 14, "success": false },
+      { "days_ago": 30, "success": true },
+      { "days_ago": 1,  "success": false }
+    ]
+  },
+  "sod_rules": {
+    "conflicts": [
+      { "name": "requester & approver", "role1": "requester", "role2": "approver" },
+      { "name": "admin & finance",      "role1": "admin",     "role2": "Finance" }
+    ]
+  }
+}
