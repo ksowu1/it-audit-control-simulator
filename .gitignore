@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Sphinx
+docs/_build/
+docs/apidocs/
+
+# IDE
+.idea/
+.vscode/
+
+# Generated outputs
+web/uploads/
+failed_controls.csv
