@@ -65,6 +65,14 @@ The control logic aligns with:
 
 ---
 
+## 📸 Sample Audit Execution
+
+The screenshot below shows a real execution of the IT Audit Control Simulator, including automated control testing and detected failures across access control, segregation of duties, and backup controls.
+
+![Audit Results Screenshot](_static/audit-results.png)
+
+---
+
 ## 🚀 Quick Start
 
 ```bash
@@ -76,3 +84,5 @@ python main.py --interactive
 
 # Launch full interactive audit menu
 python main.py --menu
+
+
