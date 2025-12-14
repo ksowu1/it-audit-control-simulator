@@ -1,0 +1,14 @@
+# Datasets Guide
+
+This simulator uses **scenario JSON files** to control what data is tested during a run.
+
+## Default scenario
+The default scenario lives here:
+
+- `config/default_scenario.json`
+
+## How scenarios are loaded
+You can run any scenario file:
+
+```bash
+python main.py --config config/default_scenario.json

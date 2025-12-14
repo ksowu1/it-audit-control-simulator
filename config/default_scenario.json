@@ -1,0 +1,74 @@
+
+{
+  "access_control": {
+    "users": {
+      "john": {
+        "role": "admin",
+        "status": "active",
+        "active": true,
+        "privileged": true,
+        "department": "IT",
+        "duties": ["developer", "deployer"]
+      },
+      "mary": {
+        "role": "user",
+        "status": "active",
+        "active": true,
+        "privileged": false,
+        "department": "Finance",
+        "duties": ["requester", "approver"]
+      },
+      "lisa": {
+        "role": null,
+        "status": "active",
+        "active": true,
+        "privileged": false,
+        "department": "HR",
+        "duties": ["requester"]
+      },
+      "paul": {
+        "role": "user",
+        "status": "terminated",
+        "active": true,
+        "privileged": false,
+        "department": "Operations",
+        "duties": ["approver"]
+      }
+    }
+  },
+  "change_management": {
+    "changes": [
+      {
+        "id": 101,
+        "approved": true,
+        "approval_date": "2024-07-01T00:00:00",
+        "deployment_date": "2024-07-03T00:00:00"
+      },
+      {
+        "id": 102,
+        "approved": false,
+        "approval_date": "2024-07-05T00:00:00",
+        "deployment_date": "2024-07-06T00:00:00"
+      }
+    ]
+  },
+  "backup_recovery": {
+    "backups": [
+      { "days_ago": 2, "success": true },
+      { "days_ago": 10, "success": true },
+      { "days_ago": 1, "success": false }
+    ]
+  },
+  "sod_rules": {
+    "conflicts": [
+      {
+        "conflict": "developer & deployer",
+        "requires_separation": ["developer", "deployer"]
+      },
+      {
+        "conflict": "requester & approver",
+        "requires_separation": ["requester", "approver"]
+      }
+    ]
+  }
+}
